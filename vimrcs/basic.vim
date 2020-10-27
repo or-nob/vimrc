@@ -59,6 +59,10 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 set number relativenumber
 set nu rnu
 
+" fixes cursor lag
+set ttimeoutlen=100
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

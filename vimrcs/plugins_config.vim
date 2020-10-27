@@ -174,3 +174,19 @@ let g:ale_lint_on_enter = 0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => CursorShape for TMUX with iTerm
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+if $TERM_PROGRAM =~ "iTerm"
+    if exists('$TMUX')
+      let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+      let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+      let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+    else
+      let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
+      let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+      let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
+    endif
+endif
