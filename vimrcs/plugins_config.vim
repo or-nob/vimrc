@@ -190,3 +190,13 @@ if $TERM_PROGRAM =~ "iTerm"
       let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
     endif
 endif
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-clang-format
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" On my mac had to spell out the complete clang-format path
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    
+let g:clang_format#command='/usr/local/bin/clang-format'
+let g:clang_format#auto_format=1
