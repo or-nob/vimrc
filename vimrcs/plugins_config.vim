@@ -200,3 +200,8 @@ endif
     
 let g:clang_format#command='/usr/local/bin/clang-format'
 let g:clang_format#auto_format=1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-rooter
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:rooter_patterns = ['.git', 'Makefile', '*.sln', 'build/env.sh']
