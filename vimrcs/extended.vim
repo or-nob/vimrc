@@ -168,5 +168,3 @@ func! CurrentFileDir(cmd)
     return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
 
-let g:clang_format#command='clang-format-6.0'
-let g:clang_format#auto_format=1
