@@ -205,3 +205,8 @@ let g:clang_format#auto_format=1
 " => vim-rooter
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:rooter_patterns = ['.git', 'Makefile', '*.sln', 'build/env.sh']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-highlightedyank
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:highlightedyank_highlight_duration = 500
